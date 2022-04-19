@@ -23,18 +23,18 @@ def addition(num1, num2):
 
 
 @hops.component(
-    "/substraction",
-    name = "substraction",
+    "/subtraction",
+    name = "subtraction",
     inputs=[
         hs.HopsInteger("First Number", "N1", "First Value", hs.HopsParamAccess.ITEM, default= 1),
         hs.HopsInteger("Second Number", "N2", "Second Value", hs.HopsParamAccess.ITEM, default= 10)
 
     ],
     outputs=[
-       hs.HopsInteger("Sub Result","S","Result of the substraction")
+       hs.HopsInteger("Sub Result","S","Result of the subtraction")
     ]
 )
-def substraction(num1, num2):
+def subtraction(num1, num2):
     sub = num1 - num2
     return sub
 

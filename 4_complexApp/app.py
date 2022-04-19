@@ -9,7 +9,7 @@ hops = hs.Hops(app)
 
 
 @hops.component(
-    "/mycomponent",
+    "/myComponent",
     name = "MyComponent",
     inputs=[
         hs.HopsInteger("First Number", "N1", "First Value", hs.HopsParamAccess.ITEM, default= 1),
@@ -21,7 +21,7 @@ hops = hs.Hops(app)
     ]
 )
 def MyComponent(num1, num2):
-    op = wk.addition(num1, num2)
+    op = wk.multiplication(num1, num2)
     return op
 
 
